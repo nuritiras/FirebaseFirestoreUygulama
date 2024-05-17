@@ -44,13 +44,13 @@ public class EditUserActivity extends AppCompatActivity {
                 db.collection("users").document(App.user.getId()).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(EditUserActivity.this, "User Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EditUserActivity.this, "Kullanıcı Başarıyla Silindi", Toast.LENGTH_SHORT).show();
                         finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(EditUserActivity.this, "Error while deleting user", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EditUserActivity.this, "Kullanıcı silinirken hata oluştu", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -68,13 +68,13 @@ public class EditUserActivity extends AppCompatActivity {
                 db.collection("users").document(App.user.getId()).set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(EditUserActivity.this, "Saved Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EditUserActivity.this, "Başarıyla kaydedildi", Toast.LENGTH_SHORT).show();
                         finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(EditUserActivity.this, "Error while saving users", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EditUserActivity.this, "Kullanıcıları kaydederken hata oluştu", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

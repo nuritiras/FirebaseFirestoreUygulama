@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar"
-        app:title="Users List"
+        app:title="Kullanıcı Listesi"
         app:titleCentered="true"
         android:background="?attr/colorPrimary"
         app:titleTextColor="?attr/colorSurface"/>

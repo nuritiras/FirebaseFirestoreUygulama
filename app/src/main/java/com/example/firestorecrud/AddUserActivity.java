@@ -46,13 +46,13 @@ public class AddUserActivity extends AppCompatActivity {
                 db.collection("users").add(user).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
-                        Toast.makeText(AddUserActivity.this, "User Added Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddUserActivity.this, "Kullanıcı Başarıyla Eklendi", Toast.LENGTH_SHORT).show();
                         finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(AddUserActivity.this, "There was an error while adding user", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddUserActivity.this, "Kullanıcı eklenirken bir hata oluştu", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

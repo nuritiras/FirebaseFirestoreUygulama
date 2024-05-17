@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar"
-        app:title="Add User"
+        app:title="Kullanıcı Ekle"
         android:background="?attr/colorPrimary"
         app:titleTextColor="?attr/colorSurface"
         app:titleCentered="true"/>
@@ -29,7 +29,7 @@
             android:id="@+id/firstNameLayout"
             android:layout_weight="1"
             android:layout_marginEnd="5sp"
-            android:hint="First Name"
+            android:hint="İsim"
             style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -46,7 +46,7 @@
             android:id="@+id/lastNameLayout"
             android:layout_marginStart="5sp"
             android:layout_weight="1"
-            android:hint="Last Name"
+            android:hint="Soyisim"
             style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -65,7 +65,7 @@
         android:layout_marginStart="20sp"
         android:layout_marginEnd="20sp"
         style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
-        android:hint="Phone Number"
+        android:hint="Telefon Numarası"
         android:id="@+id/phoneLayout"
         android:layout_below="@id/nameLayout">
 
@@ -84,7 +84,7 @@
         style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
         android:id="@+id/bioLayout"
         android:layout_below="@id/phoneLayout"
-        android:hint="Bio">
+        android:hint="Açıklama">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/bioLayout"
-        android:text="Add"
+        android:text="Ekle"
         android:id="@+id/addUser"/>
 
 </RelativeLayout>
