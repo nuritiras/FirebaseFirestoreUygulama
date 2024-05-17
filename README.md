@@ -1,3 +1,3 @@
-# Firebase-Firestore-CRUD
-This repository contains code of Firebase Firestore CRUD function implementation in android studio using java.
-YouTube tutorial: https://youtu.be/sAnffThJwuo
+# Firebase Firestore Veri Tabanı Ekleme, Listeleme, Güncelleme Silme
+Bu depo, Java kullanılarak Android stüdyosunda Firebase Firestore CRUD işlevi uygulamasının kodunu içerir.
+Web: http://www.nuritiras.com.tr
